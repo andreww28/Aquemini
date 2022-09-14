@@ -136,7 +136,7 @@
   width: 15em;
   height:15em;
   object-fit:contain;
-  background-color: var(--light-color);
+  background-color: var(--posted-img-bg-color);
 }
 
 .post-btns {

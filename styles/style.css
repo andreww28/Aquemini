@@ -386,6 +386,7 @@ span i {
 }
 
 
+
 /* animation */
 .fade-in {
   opacity: 0;
@@ -497,6 +498,8 @@ button.active {
     background-position: top right;
     margin-left: 20px;
     margin-bottom: 20px;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
   }
 
 
@@ -654,4 +657,9 @@ button.active {
   }
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  .people {
+    transition: none;
+  }
+}
 

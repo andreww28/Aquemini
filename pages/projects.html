@@ -60,7 +60,7 @@
             <img src="../img/shoes1.png" alt="" id="My Project (5)">
             <p class="project-filename">My Project (5)</p>
             <div class="options">
-              <button id="edit-btn"><i class="material-icons zoom-in">edit</i></button>
+              <button id="edit-btn"><i class="material-icons zoom-in" >edit</i></button>
               <button id="del-btn"><i class="material-icons zoom-in">delete</i></button>
             </div>
           </div>
@@ -105,8 +105,16 @@
             <button type="button" name="button" id="create-new-project-btn" class="fancy-btn" onclick="location.href = './design.html?name=blank'">Create New</button>
           </div>
         </div>
-
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave"><path fill="#F9A826" fill-opacity="0.8" d="M0,128L0,288L36.9,288L36.9,288L73.8,288L73.8,0L110.8,0L110.8,224L147.7,224L147.7,64L184.6,64L184.6,288L221.5,288L221.5,224L258.5,224L258.5,96L295.4,96L295.4,96L332.3,96L332.3,288L369.2,288L369.2,96L406.2,96L406.2,160L443.1,160L443.1,64L480,64L480,256L516.9,256L516.9,96L553.8,96L553.8,288L590.8,288L590.8,128L627.7,128L627.7,96L664.6,96L664.6,0L701.5,0L701.5,256L738.5,256L738.5,96L775.4,96L775.4,224L812.3,224L812.3,256L849.2,256L849.2,288L886.2,288L886.2,64L923.1,64L923.1,128L960,128L960,160L996.9,160L996.9,160L1033.8,160L1033.8,64L1070.8,64L1070.8,96L1107.7,96L1107.7,0L1144.6,0L1144.6,64L1181.5,64L1181.5,288L1218.5,288L1218.5,192L1255.4,192L1255.4,160L1292.3,160L1292.3,64L1329.2,64L1329.2,224L1366.2,224L1366.2,96L1403.1,96L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"></path></svg>
       </div>
+    </div>
+
+    <div class="dark-mode-wrapper">
+      <p>Dark Mode: </p>
+      <label class="switch" onclick="toggle_dark_mode(false)">
+        <input type="checkbox" id="dark-mode-switch" >
+        <span class="slider round"></span>
+      </label>
     </div>
 
     <script src="../scripts/data.json" charset="utf-8"></script>

@@ -16,14 +16,14 @@
     <header>
       <div class="logo-div">
         <i class="material-icons zoom-in" id="menu-icon" onclick="toggle_nav()">menu</i>
-        <div class="logo"><a href="./index.html">Aquemini</a></div>
+        <div class="logo"><a href="#">Aquemini</a></div>
       </div>
 
 
       <nav class="nav-bar">
         <div class="top-nav">
           <ul>
-            <li><a href="#" id="active"><i class="material-icons zoom-in">home</i> Home</a></li>
+            <li><a href="" id="active"><i class="material-icons zoom-in">home</i> Home</a></li>
             <li><a href="./pages/search.html"><i class="material-icons zoom-in">screen_search_desktop</i>Search Product</a></li>
             <li><a href="./pages/social.html"><i class="material-icons zoom-in">handshake</i>Discover</a></li>
             <li><a href="./pages/design.html"><i class="material-icons zoom-in">brush</i>Create Design</a></li>
@@ -42,10 +42,10 @@
 
 
         <ul>
-          <li><a href="./index.html#about" onclick="toggle_nav()">About Us</a></li>
-          <li><a href="./index.html#contact" onclick="toggle_nav()">Contact Us</a></li>
-          <li><a href="./index.html#learn" onclick="toggle_nav()">Learn</a></li>
-          <li><a href="#" id="pricing-nav-link" onclick="toggle_nav()">Plans & Pricing</a></li>
+          <li><a href="./index.html#about" id="bottom-nav-link" onclick="toggle_nav()">About Us</a></li>
+          <li><a href="./index.html#contact" id="bottom-nav-link" onclick="toggle_nav()">Contact Us</a></li>
+          <li><a href="./index.html#learn" id="bottom-nav-link" onclick="toggle_nav()">Learn</a></li>
+          <li><a href="./index.html#" id="pricing-nav-link" id="bottom-nav-link" onclick="toggle_nav()">Plans & Pricing</a></li>
         </ul>
       </nav>
 
@@ -58,13 +58,13 @@
           <img src="./img/shopping.svg" alt="" class="svg-main svg-main1">
           <p class="app-description app-desc1 to-bot">Allows you to draw your desired product design to search related product you want to buy that exist on different e-commerce websites.</p>
           <div class="btn-div btn-div1 to-bot">
-              <button type="button" name="button" id="create-design-btn" class="fancy-btn" onclick="location.href='./pages/design.html'">Create Design</button>
+            <a href="./pages/design.html" class="home-btn"><button type="button" name="button" id="create-design-btn" class="fancy-btn">Create Design</button></a>
           </div>
 
           <img src="./img/searching.svg" alt="" class="svg-main svg-main2">
           <p class="app-description app-desc2 to-bot">Supports any designers that is enthusiast to encourage and promote their design and can get the chance to have a sideline income as freelance agent.</p>
           <div class="btn-div btn-div2 to-top">
-              <button type="button" name="button" id="search-product-btn" class="fancy-btn" onclick="location.href='./pages/search.html'">Search Product</button>
+              <a href="./pages/search.html" class="home-btn"><button type="button" name="button" id="search-product-btn" class="fancy-btn">Search Product</button></a>
           </div>
         </div>
       </section>
@@ -83,28 +83,28 @@
           <div class="people-container">
 
             <div class="people">
-              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <figure><img src="./img/pic1.png" alt=""></figure>
               <div class="people-info">
                 <p>John Andrew San Victores</p>
               </div>
             </div>
 
             <div class="people">
-              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <figure><img src="./img/pic2.png" alt=""></figure>
               <div class="people-info">
                 <p>Aaron Samauel Lacson</p>
               </div>
             </div>
 
             <div class="people">
-              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <figure><img src="./img/pic3.jpg" alt=""></figure>
               <div class="people-info">
                 <p>Aakikz Afable</p>
               </div>
             </div>
 
             <div class="people">
-              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <figure><img src="./img/pic4.jpg" alt=""></figure>
               <div class="people-info">
                 <p>Andric Boral</p>
               </div>
@@ -188,6 +188,14 @@
           </div>
         </div>
       </section>
+
+      <div class="dark-mode-wrapper">
+        <p>Dark Mode: </p>
+        <label class="switch" onclick="toggle_dark_mode(false)">
+          <input type="checkbox" id="dark-mode-switch" >
+          <span class="slider round"></span>
+        </label>
+      </div>
     </div>
 
     <script type="text/javascript" src="./scripts/main.js"></script>

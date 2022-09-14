@@ -50,13 +50,11 @@ const add_link_img = () => {
   var url = null;
   project_content_items.forEach((item, i) => {
       item.addEventListener("click", (e) => {
-        url = '../pages/search-result.html?name=' + encodeURIComponent(e.target.id);
+        url = '../pages/search-result.html?name=' + encodeURIComponent(e.target.id) + "&" + encodeURIComponent(localStorage["_is_dark_on"]);
         document.location.href = url;
       });
   });
 
 }
-
-
 
 main();

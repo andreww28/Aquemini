@@ -17,7 +17,7 @@
         
         <button class="dropbtn" onclick="show_dropdown()"><i class="material-icons">expand_more</i></button>
         <div class="dropdown-content">
-          <a href="./projects.html">Back to Projects</a>
+          <a href="./projects.html" class="design-back">Back to Projects</a>
           <a href="#">File<i class="material-icons">chevron_right</i></a>
           <a href="#">Edit<i class="material-icons">chevron_right</i></a>
           <a href="#">Tools<i class="material-icons">chevron_right</i></a>
@@ -62,6 +62,16 @@
     <div class="help-div">
       <i class="material-icons">question_mark</i>
     </div>
+
+    <div class="dark-mode-wrapper">
+      <p>Dark Mode: </p>
+      <label class="switch" onclick="toggle_dark_mode(false)">
+        <input type="checkbox" id="dark-mode-switch" >
+        <span class="slider round"></span>
+      </label>
+    </div>
+
     <script src="../scripts/design.js" charset="utf-8"></script>
+    
   </body>
 </html>
