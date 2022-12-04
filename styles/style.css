@@ -19,6 +19,14 @@ body{
 
 button {
   font-family: 'Ubuntu', sans-serif;
+  background-color: #F9A826;
+  color: #F2F7A1;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #F9C778;
+  cursor:pointer;
 }
 
 #logo {
@@ -66,18 +74,9 @@ a#active {
 }
 
 .btn-div-main button {
-  background-color: #F9A826;
-  color: #F2F7A1;
-  border-radius: 10px;
   font-size: 1.5rem;
   padding: 0.5em 1em;
 }
-
-.btn-div-main button:hover {
-  background-color: #F9C778;
-  cursor:pointer;
-}
-
 
 
 /* layout */
