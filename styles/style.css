@@ -1,0 +1,174 @@
+/*font-family: 'Kalam', cursive;
+
+font-family: 'Reggae One', cursive;
+
+font-family: 'Roboto', sans-serif;
+
+font-family: 'Ubuntu', sans-serif;*/
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#logo {
+  font-size: 2rem;
+  font-family: 'Kalam', cursive;
+  color: #FAFBFF;
+  cursor: pointer;
+}
+
+header li a {
+  color: #fff;
+}
+
+header li a:hover, .left-nav li a:hover {
+  color: #F9C778;
+}
+
+
+.left-nav li a {
+  color: #757575;
+}
+
+a#active {
+  color: #F9A826;
+  font-weight: 700;
+}
+
+
+#welcome-text {
+  font-size: 5.3125rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:500;
+  color: #453C67;
+}
+
+#svg-main {
+  width: 35em;
+}
+
+#app-description {
+  font-size: 1.3rem;
+  color: #757575;
+  width: 40ch;
+  text-align: center
+}
+
+.btn-div-main button {
+  background-color: #F9A826;
+  color: #F2F7A1;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+}
+
+.btn-div-main button:hover {
+  background-color: #F9C778;
+  cursor:pointer;
+}
+
+
+
+/* layout */
+header {
+  padding: 0.5em 3em;
+  display:flex;
+  background-color: #453C67;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width:100%;
+  height: 4.5em;
+}
+
+header nav ul {
+  display:flex;
+  gap: 1.5em;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link{
+  text-decoration-line: none;
+}
+
+
+.body-container {
+  display:flex;
+}
+
+/*Left nav*/
+.left-nav {
+  margin-top: 4.5em;
+  padding: 2.5em 1em;
+  width: 15%;
+  height:94%;
+  background-color: #E8E8E8;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-nav ul {
+  display:flex;
+  flex-direction: column;;
+  gap:2em;
+}
+
+.user-div {
+  align-self: center;
+  display:flex;
+  gap: 1em;
+  cursor:pointer;
+}
+
+#prof-pic {
+  border-radius: 50%;
+  width:3em;
+  height:3em;
+}
+
+#username {
+  align-self: center;
+}
+
+
+/*Content Container */
+.content-container {
+  width:85%;
+  margin-left: 15%;
+  margin-top: 4.5em;
+  padding: 2em;
+  background-color: #FAFBFF;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  gap:3em;
+}
+
+.content {
+  display:flex;
+  gap:2em;
+  align-items:center;
+  justify-content: center;
+}
+
+.btn-div-main {
+  display:flex;
+  gap: 4em;
+}
