@@ -14,13 +14,19 @@
   gap: 2em;
 }
 
+.options p, .img-content p {
+  font-size: 1.25rem;
+  color: #2F2E41;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
 .option input, .option label {
   cursor: pointer;
 }
 
 .desc-content {
   display: flex;
-  display:none;
   flex-direction: column;
   gap: 1.5em;
 }
@@ -48,6 +54,7 @@
 
 .img-content {
   display: flex;
+  display:none;
   flex-direction: column;
   gap: 1.5em;
 }
