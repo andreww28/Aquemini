@@ -152,6 +152,18 @@ a:link{
   align-self: center;
 }
 
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap:-0.3em;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#pro-text {
+  color: #F9A826;
+  font-weight: 700;
+}
 
 /*Content Container */
 .content-container {
@@ -163,9 +175,15 @@ a:link{
   background-color: #FAFBFF;
   display:flex;
   flex-direction:column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap:3em;
+}
+
+.home-container {
   align-items:center;
   justify-content: center;
-  gap:3em;
+
 }
 
 .content {
