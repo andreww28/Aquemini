@@ -1,8 +1,3 @@
-.search-container {
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
 .search-header {
   display: flex;
   flex-direction: column;
