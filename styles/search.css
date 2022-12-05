@@ -1,0 +1,82 @@
+.search-container {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.search-header {
+  display: flex;
+  flex-direction: column;
+  gap:1.5em;
+}
+
+.options {
+  display: flex;
+  gap: 2em;
+}
+
+.option input, .option label {
+  cursor: pointer;
+}
+
+.desc-content {
+  display: flex;
+  display:none;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.desc-content textarea {
+  padding: 1em;
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F3F3F3;
+  color: #4F4F4F;
+  border:none;
+  outline: none;
+  resize: none;
+}
+
+#search-desc, #local-storage-btn {
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  font-size: 1.1rem;
+}
+
+
+
+/*IMG CONTENT*/
+
+.img-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.project-search-div h4 {
+  margin-bottom: 0.5em;
+  font-size: 2rem;
+  color: #2F2E41;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.project-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-item img {
+  width: 10em;
+  height: 10em;
+  object-fit:contain;
+  border: 2px solid #111;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-item:hover img{
+  transform: scale(1.2);
+}
