@@ -1,0 +1,95 @@
+item_data = `{
+  "shirt" : [
+    {
+      "img-link" : "https://cf.shopee.ph/file/dae998d746792e04fee1aa67e4fbc43d",
+      "product-link" : "https://shopee.ph/Tatoo-Print-T-shirt-Unisex-i.49771648.1342720543?sp_atk=44dd1725-9db8-478e-8287-3a75bea3e39a&xptdk=44dd1725-9db8-478e-8287-3a75bea3e39a",
+      "product-name" : "Tatoo Print T-shirt Unisex"
+    },
+    {
+      "img-link" : "https://cf.shopee.ph/file/e898e20203865622a446f90d30cdf385",
+      "product-link" : "https://shopee.ph/Plain-Hoodie-Jacket-With-Zipper-Unisex-10-Colors-i.49771648.1398935933",
+      "product-name" : "Plain Hoodie Jacket With Zipper"
+    },
+    {
+      "img-link" : "https://cf.shopee.ph/file/863e8005f8b0c3aac94e0b673cb74ed1",
+      "product-link" : "https://shopee.ph/MONKEY-KING-ACS558-COD-tshirt-for-men-korean-fashion-loose-teen-oversized-tops-on-sale-big-size-ZA-i.20816099.5731839027?sp_atk=6f152dc8-403b-4fcb-91f8-3f2216c59117&xptdk=6f152dc8-403b-4fcb-91f8-3f2216c59117",
+      "product-name" : "MONKEY KING ACS558"
+    },
+    {
+      "img-link" : "https://lzd-img-global.slatic.net/g/p/aa03a007bd805a126604ec1e7464bf6a.jpg_720x720q80.jpg_.webp",
+      "product-link" : "https://www.lazada.com.ph/products/cotton-unisex-t-shirt-for-men-korean-fashion-loose-teen-oversized-plus-size-tops-on-sale-printed-graphic-cod-o193s-i1983474079-s8643559904.html?",
+      "product-name" : "cotton unisex t shirt for men"
+    },
+    {
+      "img-link" : "https://lzd-img-global.slatic.net/g/p/88e13558142dd1b7dfdb6406fbf91617.jpg_720x720q80.jpg_.webp",
+      "product-link" : "https://www.lazada.com.ph/products/cotton-unisex-t-shirt-for-men-korean-fashion-loose-teen-oversized-plus-size-tops-on-sale-printed-graphic-cod-o304m-i632968772-s9209528842.html?clickTrackInfo=undefined&search=1&spm=a2o4l.searchlist.list.i40.19dd12ccCwC9og",
+      "product-name" : "cotton unisex t shirt for men"
+    }
+  ],
+  "mug" : [
+    {
+      "img-link" : "https://lzd-img-global.slatic.net/g/p/a913f57a068c7402cbcac61a9936007a.jpg_720x720q80.jpg_.webp",
+      "product-link" : "https://www.lazada.com.ph/products/jmy-korean-jgm-yellow-emoji-ceramic-coffee-mug-w-spoon-assorted-emoji-design-yellow-w-box-a11-1pc-i3383971614-s17263469591.html?clickTrackInfo=undefined&search=1&spm=a2o4l.searchlist.list.i40.51024563zB2rLh",
+      "product-name" : "JMY korean jgm yellow emoji ceramic coffee mug"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/61Bx5jcv48L._AC_SL1500_.jpg",
+      "product-link" : "https://www.amazon.com/Bosmarlin-Stoneware-Coffee-Dishwasher-Microwave/dp/B0878DHQW6/ref=sr_1_9?crid=1UKJF6EZ14969&keywords=mug&qid=1670248541&sprefix=mu%2Caps%2C330&sr=8-9",
+      "product-name" : "Bosmarlin Large Ceramic Coffee Mug"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/61oeYAkgtsS._AC_SL1500_.jpg",
+      "product-link" : "https://www.amazon.com/Insulated-Espresso-Birthday-Present-Valentines/dp/B08YQWT9J8/ref=sr_1_16?crid=1UKJF6EZ14969&keywords=mug&qid=1670248631&sprefix=mu%2Caps%2C330&sr=8-16",
+      "product-name" : "Cute Bear Tea Cup"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/61cKjXi9SzL._AC_SL1500_.jpg",
+      "product-link" : "https://www.amazon.com/Marble-Ceramic-Husband-Grandpa-Milliliters/dp/B07F32P4BG/ref=sr_1_36?crid=1UKJF6EZ14969&keywords=mug&qid=1670248732&sprefix=mu%2Caps%2C330&sr=8-36",
+      "product-name" : "Smarlin Marbling Ceramic Coffee Mug"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/81vFSlcss1L._AC_SL1500_.jpg",
+      "product-link" : "https://www.amazon.com/Ceramic-Altered-Porcelain-Dishwasher-Microwave/dp/B09TGVGGD3/ref=sr_1_43?crid=1UKJF6EZ14969&keywords=mug&qid=1670248782&sprefix=mu%2Caps%2C330&sr=8-43",
+      "product-name" : "LiveHouse Ceramic Coffee Mug"
+    }
+  ],
+  "shoes" : [
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/71diqhQ5YFL._AC_UX575_.jpg",
+      "product-link" : "https://www.amazon.com/Reebok-Sneaker-White-Rubber-gum-01/dp/B07MV6CB47/ref=sr_1_10?crid=1XEGCTCY8FAQC&keywords=shoes&qid=1670248883&sprefix=shoe%2Caps%2C543&sr=8-10",
+      "product-name" : "Reebok Men's Club MEMT Sneaker"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/71OSVxOrixL._AC_UX575_.jpg",
+      "product-link" : "https://www.amazon.com/adidas-Womens-Vario-Pure-White/dp/B08CZ92ZZ7/ref=sr_1_9?crid=1XEGCTCY8FAQC&keywords=shoes&qid=1670249163&sprefix=shoe%2Caps%2C543&sr=8-9",
+      "product-name" : "adidas Women's Cloudfoam Pure-2.0 Running Shoe"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/71vCni0v3+S._AC_SX395_SY395_.jpg",
+      "product-link" : "https://www.amazon.com/New-Balance-Womens-Running-Munsell/dp/B08KGQZF9S/ref=sr_1_16?crid=1XEGCTCY8FAQC&keywords=shoes&qid=1670249213&sprefix=shoe%2Caps%2C543&sr=8-16",
+      "product-name" : "New Balance Women's Fresh Foam Roav V1 Sneaker"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/71JacwbJ2GL._AC_UX575_.jpg",
+      "product-link" : "https://www.amazon.com/adidas-Mens-Racer-Running-White/dp/B098RTWYQM/ref=sr_1_15?crid=1XEGCTCY8FAQC&keywords=shoes&qid=1670249288&sprefix=shoe%2Caps%2C543&sr=8-15",
+      "product-name" : "adidas Men's Racer Tr21 Running Shoe"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/613DL+ulyYL._AC_SX395_SY395_.jpg",
+      "product-link" : "https://www.amazon.com/Reebok-Womens-Sneaker-Chalk-Alabaster/dp/B093TY8SPQ/ref=sr_1_26?crid=1XEGCTCY8FAQC&keywords=shoes&qid=1670249386&sprefix=shoe%2Caps%2C543&sr=8-26",
+      "product-name" : "Reebok Women's Club C Walking Shoe"
+    }
+  ],
+  "slippers" : [
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/81dCrHERzjL._AC_UY675_.jpg",
+      "product-link" : "https://www.amazon.com/isotoner-womens-Support-Outdoor-slippers/dp/B015AGMTQG/ref=sr_1_9?crid=1I1O63PIFBUDT&keywords=slippers&qid=1670249515&sprefix=slipper%2Caps%2C384&sr=8-9",
+      "product-name" : "Cozy Terry Hoodback Clog Slipper"
+    },
+    {
+      "img-link" : "https://m.media-amazon.com/images/I/71BGqLPeJHL._AC_UY575_.jpg",
+      "product-link" : "https://www.amazon.com/Jessica-Simpson-Womens-Slipper-Anti-Skid/dp/B079P968VS/ref=sr_1_20?crid=1I1O63PIFBUDT&keywords=slippers&qid=1670249681&sprefix=slipper%2Caps%2C384&sr=8-20",
+      "product-name" : "Jessica Simpson Women's Comfy Faux Fur House Slipper"
+    }
+  ]
+}`
