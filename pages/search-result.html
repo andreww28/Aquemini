@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Reggae+One&family=Roboto:wght@400;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/search-result.css">
     <title>Aquemini</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
       <div class="left-nav">
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="#" id="active">Search Product</a></li>
+            <li><a href="./search.html" id="active">Search Product</a></li>
             <li><a href="./social.html">Social/Discover</a></li>
             <li><a href="./design.html">Create Design</a></li>
             <li><a href="./projects.html">Projects</a></li>
@@ -42,8 +43,23 @@
 
 
       <div class="content-container">
-        <h2 id="page-title">Relevant Result</h2>
+        <h2 id="page-title">Relevant Results</h2>
+        <div class="search-info-div">
+          <p>for</p>
+          <img src="../img/shoes1.jpeg" id="chosen-item-img">
+          <div class="search-info-div-btn">
+            <button id="search-again-btn" onclick="location.href='./search.html'">Search Again</button>
+          </div>
+        </div>
+
+        <div class="result-items">
+
+        </div>
+
       </div>
     </div>
+
+    <script type="text/javascript" src="../scripts/data.json"></script>
+    <script type="text/javascript" src="../scripts/relevant-result.js"></script>
   </body>
 </html>

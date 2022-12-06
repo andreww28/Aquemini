@@ -1,0 +1,55 @@
+.search-info-div, .result-item p {
+  font-size: 1.25rem;
+  color: #2F2E41;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.search-info-div {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+#chosen-item-img {
+  width: 6em;
+  height: 6em;
+  object-fit:contain;
+  border: 2px solid #111;
+}
+
+#search-again-btn {
+  padding: 0.5em 2em;
+  font-size: 1.1rem;
+}
+
+
+
+.result-items{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  width: 90%;
+  grid-gap: 2em 4em;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-item {
+  padding: 0.5em 1em;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.result-item img {
+  width: 14em;
+  height: 14em;
+  object-fit:contain;
+  border: 2px solid #111;
+  background-color: #fff;
+}
