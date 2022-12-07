@@ -5,18 +5,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Reggae+One&family=Roboto:wght@400;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="./scripts/main.js"></script>
     <title>Aquemini</title>
   </head>
   <body>
     <header>
-      <h4 id="logo">AQUEMINI</h4>
+      <div class="logo-div">
+        <input type="checkbox" id="menu" name="menu" style="display:none;" onclick="left_menu(this)">
+        <i class="fa fa-bars" id="menu-icon" for="menu"></i>
+        <h4 id="logo">AQUEMINI</h4>
+      </div>
+
 
       <nav>
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Plans & Pricing</a></li>
-            <li><a href="#">Learn</a></li>
+            <li><a href="#" class="header-nav-link">Contact Us</a></li>
+            <li><a href="#" class="header-nav-link">Plans & Pricing</a></li>
+            <li><a href="#" class="header-nav-link">Learn</a></li>
           </ul>
       </nav>
     </header>
@@ -29,7 +36,14 @@
             <li><a href="./pages/social.html">Social/Discover</a></li>
             <li><a href="./pages/design.html">Create Design</a></li>
             <li><a href="./pages/projects.html">Projects</a></li>
+            <hr>
+            <hr>
+            <hr>
+            <li><a href="#" class="home-hidden-link">Contact Us</a></li>
+            <li><a href="#" class="home-hidden-link">Plans & Pricing</a></li>
+            <li><a href="#" class="home-hidden-link">Learn</a></li>
           </ul>
+
 
         <div class="user-div">
           <img src="./img/profile-pic.png" alt="" id="prof-pic">
