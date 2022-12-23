@@ -1,40 +1,41 @@
-.search-header {
+
+.search-header, .desc-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center ;
   gap:1.5em;
 }
 
 .options {
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
+  margin-bottom: 2em;
 }
 
 .options p, .img-content p {
   font-size: 1.25rem;
   color: #2F2E41;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .option input, .option label {
   cursor: pointer;
 }
 
-.desc-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-}
-
 .desc-content textarea {
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   background-color: #F3F3F3;
   color: #4F4F4F;
   border:none;
   outline: none;
   resize: none;
+  width: 100%;
+  max-width: 40em;
+
 }
 
 #search-desc, #local-storage-btn {
@@ -51,28 +52,44 @@
   display: flex;
   display:none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1.5em;
+  width: 100%;
+}
+
+.project-search-div {
+  width: 100%;
 }
 
 .project-search-div h4 {
   margin-bottom: 0.5em;
-  font-size: 2rem;
+  font-size: clamp(2vw, 1.8rem ,2rem);
   color: #2F2E41;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
 }
 
 .project-contents {
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
+  grid-gap: 1em;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.project-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-item img {
-  width: 10em;
-  height: 10em;
+  width: 7em;
+  height: 7em;
   object-fit:contain;
   border: 2px solid #111;
   cursor: pointer;
@@ -81,4 +98,31 @@
 
 .project-item:hover img{
   transform: scale(1.2);
+}
+
+
+@media only screen and (min-width: 1028px) {
+  .desc-content textarea {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .project-contents {
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    max-width: 50em;
+  }
+
+  .project-item img {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .project-contents {
+    grid-template-columns: repeat(5, 1fr);
+    width: 60em;
+    grid-gap: 1em 2.5em;
+  }
 }

@@ -12,8 +12,6 @@ window.onload = function () {
     var item_chosen = data.name;
     var items = item_d[item_chosen];
     update_result_imgs(items);
-
-
 }
 
 

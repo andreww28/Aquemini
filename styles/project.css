@@ -1,0 +1,73 @@
+.project-gallery {
+  margin-top: 2em;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
+  grid-gap: 1em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.project-gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.project-gallery-item p {
+  font-size: 1rem;
+  color: #2F2E41;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.project-gallery-item img {
+  width: 7em;
+  height: 7em;
+  object-fit:contain;
+  border: 2px solid #111;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-gallery-item:hover img {
+  transform: scale(1.2);
+}
+
+#create-new-project-btn {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+}
+
+
+@media only screen and (min-width: 900px) {
+  .project-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+    max-width: 50em;
+  }
+
+  .project-gallery-item img  {
+    width: 10em;
+    height: 10em;
+  }
+
+  #create-new-project-btn  {
+    font-size: 1.3rem;
+  }
+
+  .project-gallery-item p  {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1400px)  {
+  .project-gallery {
+    grid-template-columns: repeat(5, 1fr);
+    width: 60em;
+    grid-gap: 1em 2.5em;
+  }
+}
