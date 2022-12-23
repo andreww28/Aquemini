@@ -1,0 +1,170 @@
+.content-container {
+   padding:0;
+   padding-bottom: 2em;
+}
+
+.body-container {
+  padding:0;
+  padding-top: 4em;
+}
+
+.social-header {
+  margin: 0;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.user-header-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  color: #757575;
+}
+
+.user-header-div p {
+  cursor: pointer;
+}
+
+.user-info-header-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.social-prof-pic {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+}
+
+#share-design-btn {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+
+.feed {
+  padding: 2em 0.5em;
+  width: 100%;
+}
+
+.posts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-y: scroll;
+  grid-gap: 2em;
+}
+
+.post {
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #F3F3F3;
+  padding: 1em 0.5em;
+  width: 100%;
+  max-width: 35em;
+}
+
+.post-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#more-info-btn {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  color: #1f1f1f;
+}
+
+.post-info {
+  display: flex;
+  gap:0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-info-user {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  justify-content: center;
+}
+
+#user-name-post {
+  font-size: 1rem;
+  color: #757575;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#time-posted {
+  font-size: 0.8rem;
+  color: #000;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#post-desc {
+  font-size: 1rem;
+  color: #1f1f1f;
+  height: 100%;
+  min-height: 5em;
+  width: 100%;
+  max-width: 80ch;
+}
+
+
+#posted-img {
+  width: 100%;
+  max-width: 20em;
+  height:20em;
+  object-fit:contain;
+  background-color: #E8E8E8;
+}
+
+.post-btns {
+  display: flex;
+  gap: 0.5em;
+}
+
+.post-btns button {
+  padding: 0.5em 2em;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.8em;
+  justify-content: center;
+  align-items: center;  
+}
+
+.btn-grey {
+  background-color: #757575;
+}
+
+
+@media only screen and (min-width: 1028px) {
+  .body-container {
+    padding:0;
+    padding-left: 15em;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  #posted-img {
+    max-width: 15em;
+    height: 15em;
+  }
+}
