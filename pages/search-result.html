@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Kalam&family=Roboto:wght@400;700&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/search-result.css">
     <title>Aquemini</title>
@@ -15,7 +16,7 @@
     <header>
       <div class="logo-div">
         <i class="material-icons zoom-in" id="menu-icon" onclick="toggle_nav()">menu</i>
-        <div class="logo"><a href="./index.html">Aquemini</a></div>
+        <div class="logo"><a href="../index.html">Aquemini</a></div>
       </div>
 
 
@@ -57,7 +58,7 @@
           <p>for</p>
           <img src="../img/shoes1.jpeg" id="chosen-item-img">
           <div class="search-info-div-btn">
-            <button id="search-again-btn" onclick="location.href='./search.html'">Search Again</button>
+            <button id="search-again-btn" class="btn-grow" onclick="location.href='./search.html'"><i class="material-icons zoom-in">replay</i></button>
           </div>
         </div>
 
@@ -66,6 +67,7 @@
         </div>
 
       </div>
+
     </div>
 
     <script type="text/javascript" src="../scripts/data.json"></script>
