@@ -10,11 +10,11 @@
 
 .social-header {
   margin: 0;
-  padding: 1em 2em;
+  padding: 1em 0.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: var(--between-light-dark);
   width: 100%;
 }
 
@@ -22,12 +22,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5em;
-  color: #757575;
+  gap: 1em;
+  color: var(--dark-color);
 }
 
 .user-header-div p {
   cursor: pointer;
+  font-size: var(--small-fsize);
 }
 
 .user-info-header-div {
@@ -38,14 +39,14 @@
 }
 
 .social-prof-pic {
-  width: 2.5em;
-  height: 2.5em;
+  width: 1.8em;
+  height: 1.8em;
   border-radius: 50%;
 }
 
 #share-design-btn {
   padding: 0.5em 1em;
-  font-size: 1rem;
+  font-size: var(--small-fsize);
 }
 
 .feed {
@@ -66,7 +67,7 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  background-color: #F3F3F3;
+  background-color: var(--between-light-dark);
   padding: 1em 0.5em;
   width: 100%;
   max-width: 35em;
@@ -79,9 +80,9 @@
 }
 
 #more-info-btn {
-  align-self: flex-start;
-  font-size: 1.5rem;
-  color: #1f1f1f;
+  margin-top:-2em;
+  font-size: var(--medium-fsize);
+  color: var(--dark-color);
 }
 
 .post-info {
@@ -99,15 +100,16 @@
 }
 
 #user-name-post {
-  font-size: 1rem;
-  color: #757575;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--small-fsize);
+  color: var(--primary-light);
+  font-family: var(--other-fstyle);
+  font-weight: 400;
 }
 
 #time-posted {
-  font-size: 0.8rem;
-  color: #000;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: var(--tiny-fsize);
+  color:var(--dark-color);
+  font-family: var(--other-fstyle);
 }
 
 
@@ -116,11 +118,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 
 #post-desc {
-  font-size: 1rem;
-  color: #1f1f1f;
+  font-size: var(--normal-fsize);
+  color: var(--dark-color);
   height: 100%;
   min-height: 5em;
   width: 100%;
@@ -129,11 +132,11 @@
 
 
 #posted-img {
-  width: 100%;
-  max-width: 20em;
-  height:20em;
+  padding: 1em;
+  width: 15em;
+  height:15em;
   object-fit:contain;
-  background-color: #E8E8E8;
+  background-color: var(--light-color);
 }
 
 .post-btns {
@@ -142,12 +145,16 @@
 }
 
 .post-btns button {
-  padding: 0.5em 2em;
-  font-size: 0.9rem;
+  padding: 0.5em 1em;
+  font-size: var(--small-fsize);
   display: flex;
   gap: 0.8em;
   justify-content: center;
   align-items: center;  
+}
+
+.post-btns i {
+  font-size: var(--normal-fsize)
 }
 
 .btn-grey {

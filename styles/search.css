@@ -9,14 +9,18 @@
 
 .options {
   display: flex;
-  gap: 1.5em;
+  gap: 0.7em;
   margin-bottom: 2em;
 }
 
+.options label {
+  font-size: var(--normal-fsize);
+}
+
 .options p, .img-content p {
-  font-size: 1.25rem;
-  color: #2F2E41;
-  font-family: 'Roboto', sans-serif;
+  font-size: var(--medium-fsize);
+  color: var(--primary-light);
+  font-family: var(--other-fstyle);
   font-weight: 500;
 }
 
@@ -26,9 +30,9 @@
 
 .desc-content textarea {
   padding: 1em;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  background-color: #F3F3F3;
+  font-size: var(--normal-size);
+  font-family: var(--other-fstyle);
+  background-color: var(--between-light-dark);
   color: #4F4F4F;
   border:none;
   outline: none;
@@ -41,7 +45,7 @@
 #search-desc, #local-storage-btn {
   border-radius: 10px;
   padding: 0.5em 1em;
-  font-size: 1.1rem;
+  font-size: var(--normal-fsize);
 }
 
 
@@ -58,15 +62,19 @@
   width: 100%;
 }
 
+.img-content p {
+  font-size: var(--medium-fsize);
+}
+
 .project-search-div {
   width: 100%;
 }
 
 .project-search-div h4 {
   margin-bottom: 0.5em;
-  font-size: clamp(2vw, 1.8rem ,2rem);
+  font-size: var(--medium-fsize);
   color: #2F2E41;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--other-fstyle);
   font-weight: 600;
   text-align: center;
 }
@@ -97,14 +105,8 @@
 }
 
 .project-item:hover img{
-  transform: scale(1.2);
-}
-
-
-@media only screen and (min-width: 1028px) {
-  .desc-content textarea {
-    font-size: 1.2rem;
-  }
+  box-shadow: 0 0 20px var(--dark-color);
+  transform: rotate(10deg);
 }
 
 @media only screen and (min-width: 900px) {

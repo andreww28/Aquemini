@@ -25,23 +25,34 @@ const append_project_items = (img, project_title) => {
     <div class="project-gallery-item">
       <img src="` + img + `" alt="" id="` + project_title + `">
       <p class="project-filename">` + project_title + `</p>
+      <div class="options">
+        <button id="edit-btn"><i class="material-icons zoom-in">edit</i></button>
+        <button id="del-btn"><i class="material-icons zoom-in">delete</i></button>
+      </div>
     </div>`);
 
   project_contents.prepend(documentFragment);
 }
 
 const add_link_img = () => {
-  const project_content_items = document.querySelectorAll('.project-gallery-item');
+  const edit_btns = document.querySelectorAll("#edit-btn");
   var url = null;
-  project_content_items.forEach((item, i) => {
-      item.addEventListener("click", get_url_parameters);
+  edit_btns.forEach((btn, i) => {
+      btn.addEventListener("click", (e) => get_url_parameters(e));
   });
 }
 
 
 const get_url_parameters = (e) => {
-  url = '../pages/design.html?name=' + encodeURIComponent(e.target.id) + "&" + encodeURIComponent(e.target.src);
+  var btn = e.target;
+
+  if(btn.tagName == "I") {
+    btn = btn.parentNode;
+  }
+
+  var img_node = btn.parentNode.previousElementSibling.previousElementSibling;
+
+  url = '../pages/design.html?name=' + encodeURIComponent(img_node.id) + "&" + encodeURIComponent(img_node.src);
   document.location.href = url;
-  console.log(e.target.id);
 }
 main();

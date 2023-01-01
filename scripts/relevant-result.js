@@ -26,12 +26,30 @@ const update_result_imgs = (items) => {
 
 const append_result_items_child = (img, name, link) => {
   const result_items = document.querySelector('.result-items');
-  var documentFragment = document.createRange().createContextualFragment(`
-    <div class="result-item">
-      <img src="` + img + `">
-      <p class="result-item-name">` + name + `</p>
-      <a href="` + link + `" target="_blank">Item link</a>
-    </div>`);
+  var documentFragment = document.createRange().createContextualFragment(
+    ` 
+      <div class="box center">
+        <img src=" ` + img + ` " alt="" class="product-img">
+        <div class="left_container">
+          <p class="result-item-name">` + name + `</p>
+          <a href="` + link + `" target="_blank">Item link</a>
 
+          <div class="shop-logo center">
+            <img src="` + get_logo(link) + `" alt="">
+          </div>
+        </div>
+      </div>
+    `
+  );
   result_items.appendChild(documentFragment);
+}
+
+const get_logo = (link) => {
+  if(link.indexOf("shopee") >= 0) {
+    return "../img/shopee-logo.png";
+  } else if (link.indexOf("lazada") >= 0) {
+    return "../img/laz-logo.png";
+  } else if (link.indexOf("amazon") >= 0) {
+    return "../img/amazon-logo.png";
+  }
 }

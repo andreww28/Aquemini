@@ -2,8 +2,8 @@
   margin-top: 2em;
   margin-inline: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
-  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  grid-gap: 2em 1em;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -11,37 +11,72 @@
 
 
 .project-gallery-item {
+  margin-inline: auto;
+  padding: 0.5em 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary-dark);
+  width: 10em;
+  transition: all 0.2s ease-in;
 }
 
-.project-gallery-item p {
-  font-size: 1rem;
-  color: #2F2E41;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+.project-filename{
+  font-size: var(--normal-fsize);
+  color: var(--light-color);
+  font-family: var(--other-fstyle);
+  font-weight: 500;
 }
 
 .project-gallery-item img {
   width: 7em;
   height: 7em;
   object-fit:contain;
-  border: 2px solid #111;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-.project-gallery-item:hover img {
-  transform: scale(1.2);
-}
-
 #create-new-project-btn {
-  font-size: 1rem;
+  font-size: var(--normal-fsize);
   padding: 0.5em 1em;
 }
+
+.options {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 100%;
+  background-color: var(--mixed-color);
+  transition: .5s;
+  position: absolute;
+  top: 0;
+  left: -25%;
+}
+
+.options button {
+  padding-inline: 0.3em;
+  border-radius: 0;
+  cursor: pointer;
+  height: 50%;
+  width: 100%;
+  color: var(--light-color);
+  transition: 0.4s;
+}
+
+#edit-btn:hover {
+  background-color: rgb(16, 131, 16);
+}
+
+#del-btn:hover {
+  background-color: rgb(157, 22, 22);
+}
+
 
 
 @media only screen and (min-width: 900px) {
@@ -55,19 +90,28 @@
     height: 10em;
   }
 
-  #create-new-project-btn  {
-    font-size: 1.3rem;
+  .options {
+    display: flex;
   }
 
-  .project-gallery-item p  {
-    font-size: 1.25rem;
+  .project-gallery-item:hover .options {
+    left: 0;
+  }
+
+  .project-gallery-item:hover {
+    transform: translate(-5px, -8px) scale(1.02);
+    box-shadow: var(--dark-color) 5px 8px 6px;
   }
 }
 
 @media only screen and (min-width: 1400px)  {
   .project-gallery {
-    grid-template-columns: repeat(5, 1fr);
-    width: 60em;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90em;
     grid-gap: 1em 2.5em;
+  }
+
+  .project-gallery-item {
+    width: 12em;
   }
 }
