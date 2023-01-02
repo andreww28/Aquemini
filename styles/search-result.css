@@ -4,7 +4,7 @@
   gap: 2em;
 }
 
-.search-info-div, .result-item p {
+.search-info-div {
   font-size: var(--normal-fsize);
   color: var(--dark-color);
   font-family: var(--body-fstyle);
@@ -115,8 +115,15 @@
 
 
 
+
+
+
 @media only screen and (min-width: 900px) {
-  .result-item img {
+  .body-container {
+    padding: 2em 1em 2em 16em;
+  }
+
+  .product-img {
     width: 12em;
     height: 12em;
   }
@@ -182,4 +189,18 @@
   }
 
   
+}
+
+
+/* ANIMATION   */
+
+.result-item {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 1s all;
+}
+
+.result-item.active {
+  transform: translateY(0);
+  opacity: 1;
 }

@@ -38,7 +38,7 @@ const insert_project_search = () => {
 const append_projecs_search_child = (img, obj_type) => {
   const project_contents = document.querySelector('.project-contents');
   var documentFragment = document.createRange().createContextualFragment(`
-  <div class="project-item">
+  <div class="project-item .search-project-item">
     <img src="` + img + `" id="` + obj_type + `">
   </div>`);
 
@@ -56,6 +56,7 @@ const add_link_img = () => {
   });
 
 }
+
 
 
 main();
