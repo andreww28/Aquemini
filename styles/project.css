@@ -40,9 +40,12 @@
   transition: all 0.2s ease-in-out;
 }
 
+
 #create-new-project-btn {
   font-size: var(--normal-fsize);
   padding: 0.5em 1em;
+  transition-delay: 1s;
+
 }
 
 .options {
@@ -80,6 +83,10 @@
 
 
 @media only screen and (min-width: 900px) {
+  .body-container {
+    padding: 2em 1em 2em 16em;
+  }
+
   .project-gallery {
     grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
     max-width: 50em;
@@ -115,3 +122,33 @@
     width: 12em;
   }
 }
+
+/* ANIMATION */
+#page-title {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 1s all;
+}
+
+#page-title.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+button {
+  transition-delay: 1000ms;
+}
+
+.project-gallery-item , #create-new-project-btn{
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 1s all;
+}
+
+.project-gallery-item.active, #create-new-project-btn.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+

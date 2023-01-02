@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Kalam&family=Roboto:wght@400;700&family=Rubik:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <script type="text/javascript" src="./scripts/main.js"></script>
     <title>Aquemini</title>
   </head>
   <body>
@@ -42,30 +42,155 @@
 
 
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Plans & Pricing</a></li>
-          <li><a href="#">Learn</a></li>
+          <li><a href="./index.html#about" onclick="toggle_nav()">About Us</a></li>
+          <li><a href="./index.html#contact" onclick="toggle_nav()">Contact Us</a></li>
+          <li><a href="./index.html#learn" onclick="toggle_nav()">Learn</a></li>
+          <li><a href="#" id="pricing-nav-link" onclick="toggle_nav()">Plans & Pricing</a></li>
         </ul>
       </nav>
 
     </header>
 
-    <div class="body-container">
+    <div class="home-container">
+      <section class="body-container fade-in">
         <h1 id="welcome-text">Welcome to Aquemini!</h1>
         <div class="content">
           <img src="./img/shopping.svg" alt="" class="svg-main svg-main1">
-          <p class="app-description app-desc1">Allows you to draw your desired product design to search related product you want to buy that exist on different e-commerce websites.</p>
-          <div class="btn-div btn-div1">
+          <p class="app-description app-desc1 to-bot">Allows you to draw your desired product design to search related product you want to buy that exist on different e-commerce websites.</p>
+          <div class="btn-div btn-div1 to-bot">
               <button type="button" name="button" id="create-design-btn" class="fancy-btn" onclick="location.href='./pages/design.html'">Create Design</button>
           </div>
 
           <img src="./img/searching.svg" alt="" class="svg-main svg-main2">
-          <p class="app-description app-desc2">Supports any designers that is enthusiast to encourage and promote their design and can get the chance to have a sideline income as freelance agent.</p>
-          <div class="btn-div btn-div2">
+          <p class="app-description app-desc2 to-bot">Supports any designers that is enthusiast to encourage and promote their design and can get the chance to have a sideline income as freelance agent.</p>
+          <div class="btn-div btn-div2 to-top">
               <button type="button" name="button" id="search-product-btn" class="fancy-btn" onclick="location.href='./pages/search.html'">Search Product</button>
           </div>
         </div>
+      </section>
+
+      <section class="about-page fade-in" id="about">
+        <div class="about-header">
+          <div class="header-content">
+            <h2>ABOUT AQUEMINI</h2>
+            <p>Our mission is to provide our clients a better experience and easier way in terms of discovering the products they want and they need that exists on different e-commerce websites.</p>
+          </div>
+        </div>
+
+        <div class="team">
+          <h2 class="to-bot">TEAM</h2>
+
+          <div class="people-container">
+
+            <div class="people">
+              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <div class="people-info">
+                <p>John Andrew San Victores</p>
+              </div>
+            </div>
+
+            <div class="people">
+              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <div class="people-info">
+                <p>Aaron Samauel Lacson</p>
+              </div>
+            </div>
+
+            <div class="people">
+              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <div class="people-info">
+                <p>Aakikz Afable</p>
+              </div>
+            </div>
+
+            <div class="people">
+              <figure><img src="./img/profile-pic.png" alt=""></figure>
+              <div class="people-info">
+                <p>Andric Boral</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-page" id="contact">
+        <div class="contact-wrapper fade-in">
+          <div class="left-content">
+            <h4 class="to-bot">GET IN TOUCH</h4>
+            <form action="">
+              <div class="name-container input-container">
+                <input type="text" id="name-input" placeholder="NAME" name="name" value="" required>
+              </div>
+
+              <div class="email-container input-container">
+                <input type="text" id="email-input" placeholder="EMAIL" name="email" value="" required>
+              </div>
+
+              <div class="reason-container input-container">
+                <input type="text" id="reason-input" placeholder="REASON FOR CONTACT" name="reason" value="" required>
+              </div>
+
+              <div class="message-container input-container">
+                <input type="text" id="message-input" placeholder="MESSAGE" name="message" value="" required>
+              </div>
+
+              <button id="submit" value="submit" type="submit" class="btn-grow">SEND</button>
+            </form>
+          </div>
+          
+
+          <div class="right-content">
+            <h3>We'd love to hear from you!</h3>
+            <p>aquemini@gmail.com</p>
+            <div class="social-contact-wrapper">
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learn-page" id="learn">
+        <div class="learn-wrapper fade-in">
+          <div class="right-frame"></div>
+
+          <div class="left-frame">
+            <h4>Learn</h4>
+            <div class="learn-btn-div">
+              <button class="btn-grow">Documentation</button>
+              <button class="btn-grow">Watch</button>
+              <button class="btn-grow">Installation</button>
+            </div>
+          </div>
+     
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div class="pricing-wrapper">
+          <span id="close-btn-pricing" onclick="close_pricing()"><i class="material-icons" onclick="close_pricing()">close</i></span>
+          <h4>PRO VERSION</h4>
+
+          <div class="premium-div pricing-div">
+              <ul class="features">
+                <li><i class="material-icons">done</i>Save/create unlimited product design.</li>
+                <li><i class="material-icons">done</i>Access on all designing tool</li>
+                <li><i class="material-icons">done</i>Access on all templates</li>
+                <li><i class="material-icons">done</i>No ads</li>
+              </ul>
+          </div>
+
+          <div class="plans-btn-div">
+            <button class="month-btn btn-grow">$15.00 / MONTH</button>
+            <button class="year-btn btn-grow">$25.00 / YEAR</button>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script type="text/javascript" src="./scripts/home.js"></script>
   </body>
 </html>
