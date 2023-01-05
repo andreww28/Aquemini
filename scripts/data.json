@@ -78,7 +78,28 @@ item_data = `{
       "img-link" : "https://m.media-amazon.com/images/I/613DL+ulyYL._AC_SX395_SY395_.jpg",
       "product-link" : "https://www.amazon.com/Reebok-Womens-Sneaker-Chalk-Alabaster/dp/B093TY8SPQ/ref=sr_1_26?crid=1XEGCTCY8FAQC&keywords=shoes&qid=1670249386&sprefix=shoe%2Caps%2C543&sr=8-26",
       "product-name" : "Reebok Women's Club C Walking Shoe"
+    },
+    {
+      "img-link" : "https://cf.shopee.ph/file/9570763e44971265e89d32d050fb8931",
+      "product-link" : "https://shopee.ph/2022-Best-selling-Korean-ladies-white-shoes-i.174274877.7867509069?sp_atk=27865503-896a-429d-a5e2-951206c7f1a1&xptdk=27865503-896a-429d-a5e2-951206c7f1a1",
+      "product-name" : "Korean ladies white shoes"
+    },
+    {
+      "img-link" : "https://cf.shopee.ph/file/14ba661b7bedc1eeefd028aaef202cd8",
+      "product-link" : "https://shopee.ph/100-Original-Nike-Zoom-Pegasus-37-Turbo-Nike-Moon-White-Running-Shoes-For-Men-Women-i.127248602.2632295170?sp_atk=d47f592e-dcde-4c10-bab4-475f2f83043f&xptdk=d47f592e-dcde-4c10-bab4-475f2f83043f",
+      "product-name" : "Nike Zoom Pegasus 37"
+    },
+    {
+      "img-link" : "https://cf.shopee.ph/file/1ca0ef3d678571bcb8840dd61dfb4449",
+      "product-link" : "https://shopee.ph/Jordan-1-low-top-sneakers-wear-resistant-non-slip-Air-basketball-shoes-for-woman-ice-cream-white-po-i.130532015.16366947857?sp_atk=9f9a98fc-3d23-4c52-97d9-a65f27a628c5&xptdk=9f9a98fc-3d23-4c52-97d9-a65f27a628c5",
+      "product-name" : "Jordan 1"
+    },
+    {
+      "img-link" : "https://cf.shopee.ph/file/e477263aacd4022b15234538175660a4",
+      "product-link" : "https://shopee.ph/Korean-running-FILA-Disruptor-2-Sneakers-Women's-shoes-Class-A-i.75154701.1930347595?sp_atk=cc58841f-5d50-4098-a7a9-ed63806b98aa&xptdk=cc58841f-5d50-4098-a7a9-ed63806b98aa",
+      "product-name" : "FILA Disruptor 2 Sneakers"
     }
+
   ],
   "slippers" : [
     {

@@ -1,12 +1,21 @@
 const item_d = JSON.parse(item_data);
 
 window.onload = function () {
+    const _switch = document.querySelector('#dark-mode-switch');
+
     var url = document.location.href,
         params = url.split('?')[1].split('&'),
         data = {}, tmp;
     for (var i = 0, l = params.length; i < l; i++) {
          tmp = params[i].split('=');
          data[tmp[0]] = tmp[1];
+    }
+
+    if(params.length > 1) {
+      if(params[1] == "true") {
+        _switch.click();
+        localStorage.setItem("_is_dark_on", true);
+      }
     }
 
     var item_chosen = data.name;

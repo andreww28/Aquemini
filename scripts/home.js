@@ -22,3 +22,5 @@ const observer = new IntersectionObserver((entries) => {
   }
   
   observe_all_elements(['.fade-in', 'button', '.to-bot', '.people']);
+
+

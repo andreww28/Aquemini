@@ -1,4 +1,6 @@
 
+
+
 .search-header, .desc-content {
   display: flex;
   flex-direction: column;
@@ -39,6 +41,7 @@
   resize: none;
   width: 100%;
   max-width: 40em;
+  border-radius: 10px;
 
 }
 
@@ -102,11 +105,17 @@
   border: 2px solid #111;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  background-color: #fff;
+
 }
 
 .project-item:hover img{
   box-shadow: 0 0 20px var(--dark-color);
   transform: rotate(10deg);
+}
+
+.wave {
+  display: none;
 }
 
 
@@ -123,6 +132,10 @@
 }
 
 @media only screen and (min-width: 900px) {
+  .search-container {
+    overflow: hidden;
+  }
+
   .project-contents {
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
     max-width: 50em;
@@ -135,6 +148,15 @@
 
   .body-container {
     padding: 2em 1em 2em 16em;
+  }
+
+  .wave {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
   }
 }
 

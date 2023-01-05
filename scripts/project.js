@@ -52,7 +52,7 @@ const get_url_parameters = (e) => {
 
   var img_node = btn.parentNode.previousElementSibling.previousElementSibling;
 
-  url = '../pages/design.html?name=' + encodeURIComponent(img_node.id) + "&" + encodeURIComponent(img_node.src);
+  url = '../pages/design.html?name=' + encodeURIComponent(img_node.id) + "&" + encodeURIComponent(img_node.src) + "&" + encodeURIComponent(localStorage["_is_dark_on"]);
   document.location.href = url;
 }
 main();
@@ -84,3 +84,5 @@ const observe_all_elements = (nodes) => {
 }
 
 observe_all_elements(["#page-title", ".project-gallery-item", "#create-new-project-btn"]);
+
+

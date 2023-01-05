@@ -135,7 +135,8 @@
 
   .result-items {
     grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
-    
+    height: 35em;
+    overflow: scroll;
   }
 
   .box {
@@ -195,7 +196,7 @@
 /* ANIMATION   */
 
 .result-item {
-  transform: translateY(100%);
+  transform: translateY(20%);
   opacity: 0;
   transition: 1s all;
 }
